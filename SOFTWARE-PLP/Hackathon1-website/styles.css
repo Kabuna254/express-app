@@ -1,0 +1,179 @@
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Setting font family */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+    background-color: #e3cbcb3e; /* Light background color */
+    background-image: url("Images/backgroundImage2.jpg"); /* Background image */
+    background-size: cover; /* Ensures background image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps background fixed during scrolling */
+    color: #000000; /* Sets text color to black */
+    text-align: center; /* Centers text */
+}
+
+/* Container Styles */
+.container {
+    width: 80%; /* Sets the width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Header Styles */
+header {
+    width: 80%; /* Sets width of the header */
+    color: rgb(0, 0, 0); /* Black text color */
+    align-items: center; /* Aligns items in the header */
+    margin: 0 auto; /* Centers header */
+    font-weight: bolder; /* Makes header text bold */
+}
+
+/* About Section Image Styles */
+.about img {
+    width: 20%; /* Width of passport size */
+    height: 70%; /* Height of passport size */
+    object-fit: cover; /* Ensures image covers the given space without distortion */
+    float: left; /* Floats image to the left */
+    margin-left: -20px; /* Adds negative margin to shift image */
+    margin-top: 50px; /* Adds margin on top */
+    border-radius: 0 10px 10px 0px; /* Rounded corners on the right side */
+}
+
+/* Header Title Styles */
+header h1 {
+    font-size: 3rem; /* Sets font size of header */
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the text */
+    text-transform: uppercase; /* Makes text uppercase */
+    text-shadow: 0px 8px 8px #000000; /* Adds text shadow for effect */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    color: rgba(255, 255, 255, 0.553); /* Light white color with opacity */
+}
+
+/* Header Paragraph Styles */
+header p {
+    font-size: 1.3rem; /* Sets font size */
+    text-align: center; /* Centers text */
+    display: flex; /* Uses flexbox */
+    justify-content: center; /* Centers content horizontally */
+}
+
+/* Navigation Bar Styles */
+nav {
+    padding: 10px 0; /* Adds vertical padding */
+    width: auto; /* Automatically adjusts width */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Bold font for navigation links */
+}
+
+/* Unordered List Styles for Navigation */
+ul {
+    list-style: none; /* Removes default list style */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers list items */
+}
+
+/* List Item Styles */
+ul li {
+    position: relative; /* Allows for absolute positioning of child elements */
+    margin: 0 15px; /* Adds horizontal margin */
+}
+
+/* Navigation Link Styles */
+ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(0, 0, 0); /* Black text color */
+    padding: 10px 15px; /* Adds padding around the link */
+    display: block; /* Makes the entire link area clickable */
+}
+
+/* Hover Effects for Navigation Links */
+ul li a:hover {
+    background-color: #7d75755f; /* Changes background on hover */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+/* About Section Styles */
+.about {
+    display: flex; /* Uses flexbox */
+    text-align: center; /* Centers text */
+}
+
+/* Heading Styles */
+h3 {
+    margin-top: 50px; /* Adds margin to top of heading */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0; /* Adds vertical padding */
+    text-align: center; /* Centers text */
+}
+
+/* Section Heading Styles */
+section h2 {
+    font-size: 2.5rem; /* Sets font size */
+    margin-bottom: 30px; /* Adds margin below heading */
+    color: #000000; /* Black text color */
+}
+
+/* Project Item Styles */
+.project-item {
+    margin-bottom: 25px; /* Adds margin at the bottom */
+    padding: 15px; /* Adds padding inside */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds transition effects */
+}
+
+/* Hover Effects for Project Items */
+.project-item:hover {
+    transform: translateY(-5px); /* Moves project item up on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Form Input & Textarea Styles */
+.contact form input, .contact form textarea {
+    width: 80%; /* Sets width */
+    padding: 12px; /* Adds padding */
+    margin-bottom: 15px; /* Adds bottom margin */
+    border: 2px solid #ccc; /* Sets border */
+    border-radius: 5px; /* Rounds corners */
+    font-size: 1rem; /* Sets font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus Effects for Input & Textarea */
+.contact form input:focus, .contact form textarea:focus {
+    border-color: #0056b3; /* Changes border color on focus */
+    outline: none; /* Removes default outline */
+}
+
+/* Button Styles */
+.contact form button {
+    padding: 15px 25px; /* Adds padding */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-size: 1.2rem; /* Sets font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover Effects for Button */
+.contact form button:hover {
+    background-color: #444; /* Changes background color on hover */
+}
+
+/* Footer Styles */
+footer {
+    color: rgb(0, 0, 0); /* Black text color */
+    text-align: center; /* Centers the text */
+}
